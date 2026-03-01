@@ -7,7 +7,8 @@ export function Sidebar() {
         <h3 className="widget-title">About the Author</h3>
         <div className="author-info">
           <div className="author-avatar">
-            <span className="avatar-placeholder">JD</span>
+            <img src='portrait.jpg'>
+            </img>
           </div>
           <h4 className="author-name">Pulkit Mohata</h4>
           <p className="author-bio">
@@ -21,19 +22,19 @@ export function Sidebar() {
         <h3 className="widget-title">Categories</h3>
         <ul className="categories-list">
           <li>
-            <a href="/category/technology">Physics</a>
+            <a href="#">Physics</a>
             <span className="category-count">12</span>
           </li>
           <li>
-            <a href="/category/web-development">Biology</a>
+            <a href="#">Biology</a>
             <span className="category-count">9</span>
           </li>
           <li>
-            <a href="/category/javascript">Politics</a>
+            <a href="#">Politics</a>
             <span className="category-count">3</span>
           </li>
           <li>
-            <a href="/category/react">Society</a>
+            <a href="#">Society</a>
             <span className="category-count">2</span>
           </li>
         </ul>

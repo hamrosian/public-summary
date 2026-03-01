@@ -76,10 +76,7 @@ export function Article() {
           however due to the added complexity the math isn't quite so simple
           anymore. Regardless, we can show that for any number of equal
           resistances in parallel, the resultant current is an equal fraction of
-          the total current. This means that if there were 60 amperes of current
-          in a straight wire. When we add say four equal resistances in parallel
-          to that circuit, each resistance will have 60 divided by 4, that is 15
-          amperes of current passing through it.
+          the total current.
         </p>
 
         <figure className="article-image">
@@ -151,14 +148,14 @@ export function Article() {
         <figure className="article-image">
           <img
             src="hydrodynamic-circuit.png"
-            alt="A simple hydrodynamic circuit converting fluid flow into electricity."
+            alt="A simple hydrodynamic circuit converting fluid flow into useful work."
             loading="lazy"
           />
           <figcaption>
             Figure 2: A simple hydrodynamic circuit converting fluid flow into
-            electricity. The "water turbine" in the middle of the path harnesses
+            useful work. The "water turbine" in the middle of the path harnesses
             the pressure provided by the gravitational difference between the
-            two reservoirs and converts it into electricity.
+            two reservoirs and converts it into useful work.
           </figcaption>
         </figure>
         <p>
@@ -181,16 +178,13 @@ export function Article() {
           solution to these equations can be obtained for fluid flowing in a
           simple straight pipe. However, with even the smallest changes in
           geometry, a small change in the angle of the pipe, a simple
-          contriction in the width, and the solution no longer holds. On top of
-          all this, under certain conditions flows can become turbulent, so the
-          net flow direction need not be in the same direction as the pipe.
+          contriction in the width, and the solution no longer holds
+          <sup id="ref-5">
+            <a href="#footnote-5">5</a>
+          </sup>{" "}
+          .
         </p>
         <p>
-          It should be noted that modelling electrical flows is also similarly
-          hard, albeit to a much lesser extent. Electrical flows are modelled
-          using a series of differential equations called Maxwell's equations.
-          While we know analytical solutions to these equations, they are
-          nevertheless hard to solve for under certain circumstances.
           Nevertheless by "coarse graining" our model, we can remove these
           issues. In other words, if we make our model such that we can average
           out the microscopic effects, and focus only on the macroscopic
@@ -265,23 +259,24 @@ export function Article() {
             changing. Regardless most appliances account for this either by
             converting the incoming alternating current to direct current or by
             accounting for these fluctuations in their design, so the point
-            still stands. <a href="#ref-1">↑</a>
+            still stands.
+            <a href="#ref-1">↑</a>
           </li>
           <li id="footnote-2">
             Thankfully, sharp increases in current are easy to detect, and we
             can design various devices like fuses or magnetic circuit breakers
-            to cut off the electrical supply before disaster.{" "}
+            to cut off the electrical supply before disaster.
             <a href="#ref-2">↑</a>
           </li>
           <li id="footnote-3">
             This is due to the fact that the heating effect of elecricity is
-            directly proportional to the current passing through a heating
-            element (or wire as it would be in this case). Keen readers might
-            want to look up "Joule's law of heating" at their local Royal
-            Library or branch of the Royal Institute for the Arts and Sciences.{" "}
+            directly proportional to the square of the current passing through a
+            heating element (or wire as it would be in this case). Keen readers
+            might want to look up "Joule's law of heating" at their local Royal
+            Library or branch of the Royal Institute for the Arts and Sciences.
             <a href="#ref-3">↑</a>
           </li>
-          <li id="footnote-3">
+          <li id="footnote-4">
             Admittedly this is a somewhat bad way to phrase this. The
             measurement of how fast electrons move through a wire is called the
             drift velocity of the circuit and is measured in the same units as
@@ -289,7 +284,15 @@ export function Article() {
             particles, and hence analagous to the flow rate. On a similar note,
             the flow rate of any fluid doesn't measure the instantaneous
             velocity of the particles in the fluid.
-            <a href="#ref-3">↑</a>
+            <a href="#ref-4">↑</a>
+          </li>
+          <li id="footnote-5">
+            It should be noted that modelling electrical flows is also similarly
+            hard, albeit to a much lesser extent. Electrical flows are modelled
+            using a series of differential equations called Maxwell's equations.
+            While we know analytical solutions to these equations, they are
+            nevertheless hard to solve for under certain circumstances.
+            <a href="#ref-5">↑</a>
           </li>
         </ol>
       </footer>

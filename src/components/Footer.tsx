@@ -14,7 +14,7 @@ export function Footer() {
       <div className="footer-content">
         <p>© 2026 Royal Institution for the Arts and Sciences. All rights reserved.</p>
         <p className="footer-charity">The Royal Insitution for the Arts and Sciences is a registered charitable organisation under Royal Decree JA81.2009 with registration number AEH291P001</p>
-        <p className="footer-links"><a href="/privacy">Privacy</a> | <a href="/terms">Terms</a></p>
+        <p className="footer-links"><a href="#">Privacy</a> | <a href="#">Terms</a></p>
       </div>
     </footer>
   );
