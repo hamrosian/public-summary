@@ -84,7 +84,7 @@ export function Article() {
 
         <figure className="article-image">
           <img
-            src="/parallel-circuit.png"
+            src="parallel-circuit.png"
             alt="An electrical circuit with 4 appliances in parallel."
             loading="lazy"
           />
@@ -150,7 +150,7 @@ export function Article() {
         </p>
         <figure className="article-image">
           <img
-            src="/hydrodynamic-circuit.png"
+            src="hydrodynamic-circuit.png"
             alt="A simple hydrodynamic circuit converting fluid flow into electricity."
             loading="lazy"
           />

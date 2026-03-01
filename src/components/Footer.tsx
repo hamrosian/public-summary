@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="blog-footer">
       <div className="footer-emblem">
         <img 
-          src="/emblem-erusea.webp" 
+          src="emblem-erusea.webp" 
           alt="Emblem" 
           className="emblem-image"
         />
