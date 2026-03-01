@@ -1,0 +1,174 @@
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-content {
+  background-color: var(--color-bg-card);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  position: relative;
+}
+
+.page-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-primary-gradient);
+}
+
+.page-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-heading-gold);
+  margin: 0 0 1.5rem 0;
+  font-family: var(--font-heading);
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.page-content h1::after {
+  content: '❧';
+  display: block;
+  color: var(--color-accent);
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.page-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-heading-primary);
+  margin: 2rem 0 1rem 0;
+  font-family: var(--font-heading);
+}
+
+.page-content h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-heading-primary);
+  margin: 0 0 0.5rem 0;
+  font-family: var(--font-heading);
+}
+
+.page-content p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin: 0 0 1.25rem 0;
+}
+
+.page-content ul {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin: 0 0 1.25rem 0;
+  padding-left: 1.5rem;
+}
+
+.page-content li {
+  margin-bottom: 0.5rem;
+}
+
+.page-content a {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent);
+  transition: border-color 0.2s;
+}
+
+.page-content a:hover {
+  border-bottom-color: var(--color-secondary);
+}
+
+.page-intro {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem !important;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Contact Methods */
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.contact-method {
+  background-color: var(--color-bg-input);
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.contact-method h3 {
+  color: var(--color-accent);
+}
+
+.contact-method p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-border);
+  font-size: 1rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: var(--color-bg-card);
+  color: var(--color-text-primary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent-bg);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary-gradient);
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+}
+
+.submit-button:hover {
+  opacity: 0.9;
+}

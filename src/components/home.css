@@ -1,0 +1,277 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Hero Section - Full Width & Seamless */
+.hero {
+  background-color: var(--color-bg-primary);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+  margin: -2.5rem -1.5rem 3rem -1.5rem;
+  width: calc(100% + 3rem);
+}
+
+/* Remove card styling */
+.hero::before,
+.hero::after {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-label {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-heading);
+}
+
+.hero-title {
+  font-size: 7.5rem;
+  font-weight: 700;
+  color: var(--color-heading-gold) !important;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.15;
+  font-family: var(--font-title);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* Art Nouveau curved lines */
+.decoration-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
+}
+
+.decoration-circle:nth-child(2) {
+  width: 180px;
+  height: 180px;
+  border-color: var(--color-secondary);
+}
+
+.decoration-circle:nth-child(3) {
+  width: 120px;
+  height: 120px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-heading-gold);
+  margin: 0 0 1.5rem 0;
+  font-family: var(--font-heading);
+  text-align: center;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.section-title::before,
+.section-title::after {
+  content: '—';
+  color: var(--color-accent);
+  margin: 0 0.75rem;
+}
+
+/* Featured Section */
+.featured-section {
+  padding: 0 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.featured-card {
+  background: var(--color-primary-gradient);
+  padding: 2.5rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+/* Art Nouveau decorative border */
+.featured-card::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.featured-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.featured-card .card-category {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.featured-card .featured-title {
+  color: #ffffff;
+}
+
+.featured-card .featured-excerpt {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.featured-card .card-meta {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.featured-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.featured-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-heading-primary);
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.3;
+  font-family: var(--font-heading);
+}
+
+.featured-excerpt {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+/* Card Categories */
+.card-category {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: var(--color-accent-bg);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--color-accent);
+}
+
+/* Recent Articles */
+.recent-section {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.article-card {
+  background-color: var(--color-bg-card);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: border-color 0.2s;
+  border: 1px solid var(--color-border);
+}
+
+.article-card:hover {
+  border-color: var(--color-accent);
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-heading-primary);
+  margin: 0.75rem 0 0.5rem 0;
+  line-height: 1.4;
+  font-family: var(--font-heading);
+}
+
+.card-excerpt {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+.card-meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem;
+    margin: -2rem -0.75rem 2rem -0.75rem;
+    width: calc(100% + 1.5rem);
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .hero-decoration {
+    display: none;
+  }
+
+  .featured-title {
+    font-size: 1.5rem;
+  }
+
+  .featured-section,
+  .recent-section {
+    padding: 0 1rem;
+  }
+}

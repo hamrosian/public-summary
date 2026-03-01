@@ -1,0 +1,213 @@
+/* ============================================
+   Art Nouveau Theme - CSS Variables
+   ============================================ */
+:root {
+  /* Art Nouveau Color Palette */
+  --color-primary: #1D5C54;        /* Deep Emerald Green */
+  --color-primary-hover: #164A44;
+  --color-primary-light: #2A7B70;
+  --color-primary-bg: #E8F0EF;
+  --color-primary-gradient: linear-gradient(135deg, #1D5C54 0%, #2A7B70 100%);
+
+  /* Secondary - Warm Gold/Bronze */
+  --color-secondary: #C9A962;
+  --color-secondary-hover: #B8973D;
+  --color-secondary-light: #D4BC7D;
+  --color-secondary-bg: #F5F0E1;
+
+  /* Accent - Muted Terracotta */
+  --color-accent: #B85C38;
+  --color-accent-hover: #9A4D2F;
+  --color-accent-light: #D4775A;
+  --color-accent-bg: #FBF0ED;
+
+  /* Background Colors - Cream/Ivory/Papyrus */
+  --color-bg-primary: #F7F2E6;
+  --color-bg-secondary: #FAF8F2;
+  --color-bg-card: #FAF5E8;
+  --color-bg-input: #F0EBD9;
+
+  /* Text Colors - High Contrast */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #333333;
+  --color-text-muted: #5C5C5C;
+  --color-text-light: #7A7A7A;
+
+  /* Border Colors */
+  --color-border: #D4CFC2;
+  --color-border-light: #E8E3D6;
+
+  /* Link Colors */
+  --color-link: #1D5C54;
+  --color-link-hover: #B85C38;
+
+  /* Heading Colors */
+  --color-heading-primary: #1D5C54;
+  --color-heading-gold: #C9A962;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(29, 92, 84, 0.1);
+  --shadow-md: 0 6px 20px rgba(29, 92, 84, 0.12);
+  --shadow-primary: 0 8px 25px rgba(29, 92, 84, 0.2);
+
+  /* Fonts */
+  --font-title: 'Fleur De Leah';
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Lora', Georgia, serif;
+}
+
+/* Dark Mode - High Contrast with Terracotta */
+body.dark-mode {
+  /* Primary stays as accent color in dark mode */
+  --color-primary: #4AA99D;
+  --color-primary-hover: #6BC4B6;
+  --color-primary-light: #8DD4C9;
+  --color-primary-bg: #1A3D38;
+  --color-primary-gradient: linear-gradient(135deg, #4AA99D 0%, #6BC4B6 100%);
+
+  /* Secondary - Gold stays */
+  --color-secondary: #D4BC7D;
+  --color-secondary-hover: #E0CB8E;
+
+  /* Terracotta - becomes brighter in dark mode for contrast */
+  --color-accent: #E88B6B;
+  --color-accent-hover: #F5A07D;
+  --color-accent-light: #F5B89A;
+  --color-accent-bg: #2D2522;
+
+  /* Background Colors - Dark */
+  --color-bg-primary: #0A1412;
+  --color-bg-secondary: #121D1B;
+  --color-bg-card: #1A2B27;
+  --color-bg-input: #243832;
+
+  /* Text Colors - High Contrast Light */
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #E0E0E0;
+  --color-text-muted: #B0B0B0;
+  --color-text-light: #8A8A8A;
+
+  /* Border Colors */
+  --color-border: #3A5047;
+  --color-border-light: #2D403A;
+
+  /* Link Colors - Terracotta for contrast */
+  --color-link: #E88B6B;
+  --color-link-hover: #F5A07D;
+
+  /* Heading Colors */
+  --color-heading-primary: #F5F5F5;
+  --color-heading-gold: #D4BC7D;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-primary: 0 8px 25px rgba(232, 139, 107, 0.25);
+
+  background-color: var(--color-bg-primary);
+}
+
+/* Dark mode specific overrides */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .article-title,
+body.dark-mode .card-title,
+body.dark-mode .hero-title,
+body.dark-mode .section-title {
+  color: var(--color-heading-primary);
+}
+
+body.dark-mode .widget-title,
+body.dark-mode .featured-title,
+body.dark-mode .site-title a {
+  color: var(--color-heading-gold);
+}
+
+body.dark-mode .tag,
+body.dark-mode .card-category {
+  color: var(--color-accent);
+  background-color: var(--color-accent-bg);
+  border-color: var(--color-accent);
+}
+
+body.dark-mode .category-count {
+  background-color: var(--color-bg-input);
+  color: var(--color-accent);
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings use elegant serif font */
+h1, h2, h3, h4, h5, h6,
+.article-title, .card-title, .site-title, .widget-title, .section-title, .hero-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Links - use terracotta in light mode */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ============================================
+   Layout
+   ============================================ */
+.blog-layout {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem 2.5rem 1.5rem;
+  width: 100%;
+}
+
+.blog-content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .blog-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   Footer
+   ============================================ */
