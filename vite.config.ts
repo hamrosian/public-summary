@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/blog/',
+  base: '/public-summary/',
 })
