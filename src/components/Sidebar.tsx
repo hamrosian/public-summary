@@ -14,7 +14,7 @@ export function Sidebar() {
           <p className="author-bio">
             Pulkit, 3rd Marquess Mohata, is the Royal Advisor on Science to the King of Erusea. He previously served as the Erusean representative for the design committee of the International Space Elevator.
           </p>
-          <a href="/about" className="author-link">View all posts →</a>
+          <a href="#" className="author-link">View all posts →</a>
         </div>
       </div>
 

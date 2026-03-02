@@ -53,7 +53,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
       <div className="header-container">
         <h1 className="site-title">
           <a href="#" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>
-            <span className="small-caps-first">P</span><span className="small-caps-rest">ublic</span> <span className="small-caps-first">I</span><span className="small-caps-rest">nterest</span>
+            Public Interest
           </a>
         </h1>
         <button 
